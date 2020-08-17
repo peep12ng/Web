@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title> 나의 첫 홈페이지 </title>
-		<link href="002_CSS.css" type="text/css" rel="stylesheet" />
+		<link href="002_CSS.css" type="text/css" rel="stylesheet" /> <!-- <[link] - 요소, href - 속성 -->
 	</head>
 	<body>
 		<h1> HTML과 CSS맛보기 </h1>
@@ -17,3 +17,63 @@
 		</div>
 	</body>
 </html>
+
+<!--
+<img src="https://webberstudy.com/attach/html-1/sample.png" alt="샘플 이미지"/> src - 이미지 경로, alt - 대체 텍스트
+<a href="http://webberstudy.com">웨버스터디 홈으로 가기/a> href - 연결 된 링크
+
+
+절대주소와 상대주소
+절대주소 : 직접적으로 전체 주소를 적는 방식 ex) <img의 src, <a의 href
+
+상대주소 : 해당 파일 기준으로 파일을 찾는 방식 ex) <link의 href
+
+Doctype
+
+	<!doctype HTML> - 이 문서가 HTML5라는 것을 명시
+	맨 처음에 반드시 작성
+
+head 요소
+
+	문서의 메타데이터 집합
+	메타데이터 - 웹 페이지의 직접적으로 보이지 않는 정보 ex)이 페이지의 제목, 이 페이지의 검색엔진 노출 여부, 이 페이지에 대한 소개글 등등, css파일과 js파일을 연결하는 부분
+	
+	title 요소
+		<title> 문서의 제목 </title>
+		문서의 제목이나 이름을 나타냄
+		title 요소의 내용은 브라우저 창 제목이나 페이지의 탭에 나타남
+		구글 같은 검색엔진에서는 검색된 페이지의 이름으로 나타남	
+
+	meta 요소
+		<meta 속성="속성 값" />
+
+		charset메타 - 현재 페이지의 대한 인코딩 정보(UTF-8 방식)
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+			브라우저가 이 메타를 읽고 글자를 올바르게 렌더링
+			국내에서는 보통 UTF-8, euc-kr 사용
+
+		
+		Description메타 - 현재 페이지에 대한 설명, 주로 검색엔진이 확인
+			<meta name="Description" content="소개 내용" />
+
+
+		Keywords메타 - 페이지의 주요 키워드들을 담고 있음, 주로 검색엔진이 확인
+			<meta name="Keywords" content="키워드들의 나열" />
+			키워드들은 콤마(,)로 구분함
+			키워드의 개수는 200개 미만 30개가 적당
+
+
+		robots메타 - 이 페이지를 검색엔진이 수집을 할지 안 할지를 정하는 정보
+			<meta name="robots" content="noindex, nofollow" />
+			content값을 noindex, nofollow로 줄 경우 색인 x 노출 x 반대 index, follow
+
+	link 요소
+		<link href="style.css" type="text/css" rel="stylesheet" />
+		주로 css파일을 연결할 때 사용
+		href - 해당 css파일의 주소
+		type, rel - css파일 외에 다른 요소와 연결 시 사용
+		
+	script 요소
+		<script type="text/javascript" src="abc.js"> </script>
+		외부 js파일 연결할 때 사용
+		body안에 들어가도 괜찮음
