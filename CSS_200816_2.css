@@ -1,4 +1,18 @@
-body {
-	background-color:#333333;
+body /* 선택자 해당 태그에 스타일 지정 */{
+	background-color:#333333; /* 속성:속성 값 */
 	color:white;
+}
+
+p {
+	color:red;
+}
+
+div p{
+	color:blue;
+}
+
+h1 {
+	font-size:40px;
+	font-weight:normal;
+	color:violet;
 }
