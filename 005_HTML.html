@@ -1,0 +1,86 @@
+<!doctype HTML>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		<div>
+			<ol>
+				<li> 항목 </li>
+				<li> 항목 </li>
+			</ol>
+		</div>
+		
+		<div>
+			<ol>
+				<li> <p>pppp</p> </li>
+			</ol>
+		</div>
+		
+		<div>
+			<ol start="5">
+				<li> 항목 </li>
+			</ol>
+		</div>
+		
+		<div>
+			<ul>
+				<li> 항목 </li>
+				<li> 항목 </li>
+			</ul>
+		</div>
+		
+		<div>
+			<dl>
+				<dt> 이름 </dt>
+				<dd> 홍길동 </dd>
+			</dl>
+		</div>
+		
+		<div>
+			<h1>
+				라면 레시피
+			</h1>
+			<dl>
+				<dt>준비물</dt>
+				<dd>
+					<ul>
+						<li>물 550cc</li>
+						<li>라면 1봉지</li>
+					</ul>
+				</dd>
+				<dt>조리법</dt>
+				<dd>
+					<ol>
+						<li>물을 끓인다.</li>
+						<li>물이 끓으면, 면과 스프를 넣는다.</li>
+						<li>다 익으면 불을 끄고 맛있게 먹는다.</li>
+					</ol>
+				</dd>
+			</dl>
+		</div>
+	</body>
+</html>
+
+<!--
+ol 요소
+	Ordered List
+	순서가 있는 목록
+	ol 요소 안의 li 요소로 항목을 표현함
+	li 요소만 포함할 수 있음
+	보통 1부터 시작하나 start 속성으로 시작 값 지정할 수 있음
+	reserved속성으로 역순으로 시작 가능(속성 값은 "reserved"고정 - "불리언 속성" -> doctype값에 따라 속성	값 생략 가능)
+	li 요소
+		다른 요소들 포함 가능
+		
+ul 요소
+	Unordered List
+	순서가 없는 목록
+	ol과 비슷하지만 start, reserved 사용 x
+
+dl 요소
+	Description List
+	개념(dt 요소)과 정의(dd 요소)로 이루어진 목록
+	1:다, 다:다 가능
+	dt - 인라인 dd - 블럭
+	
